@@ -1,10 +1,10 @@
-const BotName = 'FarhanX_BOT'; // Nama Bot Whatsapp
-const instagramlu = 'https://www.instagram.com/_farhan_xcode7'; // Nama Instagramlu cok
-const whatsapplu = 'Wa.me/628311800241'; // Nomor whatsapplu cok
+const BotName = 'RMS BOT WHATSAPP'; // Nama Bot Whatsapp
+const instagramlu = 'https://www.instagram.com/itsmeikyxsec404'; // Nama Instagramlu cok
+const whatsapplu = 'Wa.me/6281281872699'; // Nomor whatsapplu cok
 const kapanbotaktif = '*terserah gw lahhh*'; // Kapan bot lu aktif
 const grupch1 = 'tidak punya grup'; // OFFICIAL GRUP LU 1
-const grupch2 = 'https://t.me/FarhanXCode7'; // OFFICIAL GRUP LU 2
-const grupch3 = 'https://www.instagram.com/_farhan_xcode7'; // OFFICIAL GRUP LU 3
+const grupch2 = 'https://t.me/itsmeikyxsec404'; // OFFICIAL GRUP LU 2
+const grupch3 = 'https://www.instagram.com/itsmeikyxsec404'; // OFFICIAL GRUP LU 3
 //
 const qrcode = require("qrcode-terminal");
 const moment = require("moment");
@@ -200,7 +200,7 @@ if (text.includes("!wiki")){
 const teks = text.replace(/!wiki /, "")
 axios.get(`https://st4rz.herokuapp.com/api/wiki?q=${teks}`).then((res) => {
 	conn.sendMessage(id, '[ WAIT ]❗ Sedang di proses⏳ silahkan tunggu sebentar', MessageType.text)
-    let hasil = `📝Menurut Wikipedia:\n\n${res.data.result}\n\n\n*_Powered By FarhanXCode7_*`;
+    let hasil = `📝Menurut Wikipedia:\n\n${res.data.result}\n\n\n*_Powered By ItsmeikyXSec404_*`;
     conn.sendMessage(id, hasil ,MessageType.text);
 })
 }
@@ -209,7 +209,7 @@ if (text.includes("!sholat")){
   const teks = text.replace(/!sholat /, "")
   axios.get(`https://mhankbarbar.herokuapp.com/api/jadwalshalat?daerah=${teks}&apiKey=zFuV88pxcIiCWuYlwg57`).then ((res) =>{
   conn.sendMessage(id, '[ WAIT ]❗ Sedang mencari jadwal sholat di daerah yg diminta⏳ silahkan tunggu sebentar', MessageType.text)
-  let hasil = `Jadwal sholat di *${teks}* hari ini adalah\n\n⚡Imsyak : ${res.data.Imsyak}\n⚡Subuh : ${res.data.Subuh} WIB\n⚡Dzuhur : ${res.data.Dzuhur}WIB\n⚡Ashar : ${res.data.Ashar} WIB\n⚡Maghrib : ${res.data.Maghrib}\n⚡Isya : ${res.data.Isya} WIB\n⚡Tengah malam : ${res.data.Dhuha} WIB\n\n\n_*Powered By FarhanXCode7*_`;
+  let hasil = `Jadwal sholat di *${teks}* hari ini adalah\n\n⚡Imsyak : ${res.data.Imsyak}\n⚡Subuh : ${res.data.Subuh} WIB\n⚡Dzuhur : ${res.data.Dzuhur}WIB\n⚡Ashar : ${res.data.Ashar} WIB\n⚡Maghrib : ${res.data.Maghrib}\n⚡Isya : ${res.data.Isya} WIB\n⚡Tengah malam : ${res.data.Dhuha} WIB\n\n\n_*Powered By ItsmeikyXSec404*_;
   conn.sendMessage(id, hasil, MessageType.text);
 })
 }
@@ -219,7 +219,7 @@ axios.get(`https://api.banghasan.com/quran/format/json/acak`).then((res) => {
     const sr = /{(.*?)}/gi;
     const hs = res.data.acak.id.ayat;
     const ket = `${hs}`.replace(sr, '');
-    let hasil = `ayat Quran random\n\n\n[${ket}]   ${res.data.acak.ar.teks}\n\n${res.data.acak.id.teks}(QS.${res.data.surat.nama}, Ayat ${ket})\n\n\n\n_*Powered By FarhanXCode7*_`;
+    let hasil = `ayat Quran random\n\n\n[${ket}]   ${res.data.acak.ar.teks}\n\n${res.data.acak.id.teks}(QS.${res.data.surat.nama}, Ayat ${ket})\n\n\n\n_*Powered By ItsmeikyXSec404*_`;
     conn.sendMessage(id, hasil ,MessageType.text);
 })
 }
@@ -467,7 +467,7 @@ conn.sendMessage(id, 'command Salah \nYg bener gini !foto cewek/cowok\n\nContoh:
          	conn.sendMessage(id, hasil, MessageType.text)
             let stik = fs.readFileSync('temp/' + jam + '.webp')
             conn.sendMessage(id, stik, MessageType.sticker)
-		conn.sendMessage(id, '\n\nnohh stikernya udah jadi, gausah terima kasih:v xixixi\n\n\n\n*_Powered By FarhanXCode7_*', MessageType.text)
+		conn.sendMessage(id, '\n\nnohh stikernya udah jadi, gausah terima kasih:v xixixi\n\n\n\n*_Powered By ItsmeikyXSec404_*', MessageType.text)
          });
       }
    }
@@ -525,7 +525,7 @@ _${kata}_
 	*~${author}*
          `, MessageType.text
             );
-conn.sendMessage(id, '*_Powered By FarhanXCode7_*', MessageType.text);
+conn.sendMessage(id, '*_Powered By ItsmeikyXSec404_*', MessageType.text);
          });
    }
    else if (text.includes("!nama ")) 
@@ -590,7 +590,7 @@ conn.sendMessage(id, '*_Powered By FarhanXCode7_*', MessageType.text);
 
       ᚔᚔᚔᚔᚔᚌᚌᚌᚌᚔᚔᚔᚔᚔ
     `, MessageType.text);
-    conn.sendMessage(id, 'Buset Keknya Gak Cocok Gan:v candav\n\n\n_*Powered By FarhanXCode7*_', MessageType.text);
+    conn.sendMessage(id, 'Buset Keknya Gak Cocok Gan:v candav\n\n\n_*Powered By ItsmeikyXSec404*_', MessageType.text);
   });
   }
  
@@ -724,7 +724,7 @@ if (text.includes("!lirik")){
 		conn.sendMessage(id, '❗nihh lirik yg kamu minta❗', MessageType.text)
 	 	let hasil = `🎵lirik lagu🎵${teks} \n\n\n ${res.data.result.lirik}`
 	conn.sendMessage(id, hasil, MessageType.text)
-	conn.sendMessage(id, 'Oke Gan Terimakasih Telah Menggunakan Bot ini Jangan Lupa Ketik *!donasi* \n\n\n_*Powered By FarhanXCode7*_', MessageType.text)
+	conn.sendMessage(id, 'Oke Gan Terimakasih Telah Menggunakan Bot ini Jangan Lupa Ketik *!donasi* \n\n\n_*Powered By ItsmeikyXSec404*_', MessageType.text)
 	})
 }
 if (text.includes("!alay")){
@@ -732,7 +732,7 @@ if (text.includes("!alay")){
 	axios.get(`https://api.terhambar.com/bpk?kata=${alay}`).then ((res) =>
 		{ let hasil = `${res.data.text}`
 		conn.sendMessage(id, hasil, MessageType.text)
-		 conn.sendMessage(id, 'Sfx*\nAlay Lu Jingan:v\n\n\n*_Powered By FarhanXCode7_*', MessageType.text)
+		 conn.sendMessage(id, 'Sfx*\nAlay Lu Jingan:v\n\n\n*_Powered By ItsmeikyXSec404_*', MessageType.text)
 	})
 }
 if (text.includes("!say anjing")){
